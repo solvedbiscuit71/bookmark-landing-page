@@ -1,0 +1,62 @@
+header {
+  padding: 2.25em 2em;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .navbar-toggler {
+    position: absolute;
+    top: 2.25em;
+    right: 2em;
+
+    .open { display: inline; }
+    .close { display: none; }
+  }
+}
+
+.media {
+  display: none;
+  width: 100%;
+
+  gap: 2.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+header.show-navbar {
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsla(229.1, 30.8%, 21%, 0.975);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+
+  .navbar-toggler {
+    .close { display: inline; }
+    .open { display: none; }
+  }
+
+  .logo {
+    &__name {
+      fill: white;
+    }
+
+    &__circle {
+      fill: white;
+    }
+
+    &__icon {
+      fill: var(--clr-darkblue);
+    }
+  }
+
+  .navbar { display: block; }
+  .media { 
+    display: flex; 
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+  }
+}
