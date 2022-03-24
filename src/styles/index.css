@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 :root {
   --clr-red: hsl(0, 94%, 66%);
   --clr-blue: hsl(231, 69%, 60%);
@@ -130,6 +130,59 @@ body {
 }
 .dropdown--show .arrow path {
   stroke: var(--clr-red);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form button {
+  background-color: var(--clr-red);
+  color: white;
+}
+
+.input {
+  position: relative;
+  z-index: 5;
+}
+.input img, .input span {
+  display: none;
+}
+.input input {
+  width: 100%;
+  padding: 1em 1.125em;
+  border: none;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.input input:focus {
+  border: none;
+  outline: none;
+}
+
+.input--error {
+  background-color: var(--clr-red);
+  border-radius: 5px;
+}
+.input--error input {
+  width: 98%;
+  margin: 1%;
+}
+.input--error img {
+  display: inline;
+  position: absolute;
+  z-index: 6;
+  top: calc(1em + 2%);
+  right: calc(0.5em + 2%);
+}
+.input--error span {
+  display: block;
+  color: white;
+  font-size: 0.6rem;
+  font-style: italic;
+  margin-left: 1em;
+  padding: 0.25em 0 calc(0.25em + 1%);
 }
 
 header {

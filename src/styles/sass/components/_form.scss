@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  button {
+    background-color: var(--clr-red);
+    color: white;
+  }
+}
+
+.input {
+  position: relative;
+  z-index: 5;
+  img,span { display: none; }
+
+  input {
+    width: 100%;
+    padding: 1em 1.125em;
+    border: none;
+    border-radius: 5px;
+
+    color: rgba(black,.8);
+  }
+
+  input:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.input--error {
+  background-color: var(--clr-red);
+  border-radius: 5px;
+  input {
+    width: 98%;
+    margin: 1%;
+  }
+
+  img {
+    display: inline;
+    position: absolute;
+    z-index: 6;
+    top: calc(1em + 2%);
+    right: calc(.5em + 2%);
+  }
+
+  span {
+    display: block;
+
+    color: white;
+    font-size: .6rem;
+    font-style: italic;
+    margin-left: 1em;
+    padding: .25em 0 calc(.25em + 1%);
+  }
+}

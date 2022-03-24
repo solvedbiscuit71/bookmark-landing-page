@@ -4,7 +4,7 @@ function Form() {
       <div className="input">
         <input type="text" placeholder="Enter your email address" />
 
-        <img src="images/icon-error.svg" alt="error icon" className="error" />
+        <img src="images/icon-error.svg" alt="error icon" />
         <span>Whoops, make sure it's an email</span>
       </div>
 

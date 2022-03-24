@@ -32,7 +32,7 @@ function Tab() {
   return (
     <div className="tab">
       <ul className="tab-names">
-        { data.map(( tab,index ) => <li><div onClick={() => setCur(index)} className={`tab-name ${index === cur ? "tab-name--active" : ""}`}>{tab.name}</div></li>)}
+        { data.map(( tab,index ) => <li key={index}><div onClick={() => setCur(index)} className={`tab-name ${index === cur ? "tab-name--active" : ""}`}>{tab.name}</div></li>)}
       </ul>
 
       <div className="tab-content">
