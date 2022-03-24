@@ -1,0 +1,13 @@
+.btn {
+  padding: 1em;
+  text-align: center;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.btn--primary {
+  background-color: var(--clr-blue);
+  color: white;
+}

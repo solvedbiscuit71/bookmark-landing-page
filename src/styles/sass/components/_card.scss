@@ -1,0 +1,43 @@
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+}
+
+.card {
+  width: 100%;
+  min-height: 326px;
+  padding: 1.375em;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: white;
+  background-image: url("../../public/images/bg-dots.svg");
+  background-repeat: no-repeat;
+  background-position: top 16.5em left;
+  background-size: contain;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px 0px hsla(246, 32%, 39%, 0.26);
+
+  img {
+    margin: 1.5em 0;
+  }
+
+  h3 {
+    margin: .4em 0;
+  }
+  p {
+    margin: 0;
+  }
+
+  position: relative;
+
+  button {
+    margin-top: 4.5em;
+    width: 100%;
+  }
+}
