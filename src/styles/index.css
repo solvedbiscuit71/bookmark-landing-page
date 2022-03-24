@@ -24,11 +24,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 1.45rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.325rem;
 }
 
 p {
@@ -59,6 +59,17 @@ body {
 .btn--primary {
   background-color: var(--clr-blue);
   color: white;
+}
+
+.btn--secondary {
+  background-color: var(--clr-red);
+  color: white;
+}
+
+.btn--shadow {
+  background-color: #f2f2f2;
+  box-shadow: 0px 6px 12px 0px rgba(74, 68, 131, 0.26);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .card-flex {
@@ -116,11 +127,13 @@ body {
   font-size: 0.95rem;
   font-weight: 400;
   margin: 1.5em 0 1em;
+  text-align: left;
 }
 .dropdown p {
   display: none;
   margin: 2em 0;
   line-height: 1.625em;
+  text-align: left !important;
 }
 .dropdown--show p {
   display: block;
@@ -137,9 +150,8 @@ form {
   flex-direction: column;
   gap: 1em;
 }
-form button {
-  background-color: var(--clr-red);
-  color: white;
+form input, form button.btn {
+  padding: 1.25em 1.125em;
 }
 
 .input {
@@ -151,7 +163,6 @@ form button {
 }
 .input input {
   width: 100%;
-  padding: 1em 1.125em;
   border: none;
   border-radius: 5px;
   color: rgba(0, 0, 0, 0.8);
@@ -210,8 +221,7 @@ header .navbar-toggler .close {
 header .navbar {
   opacity: 0;
 }
-
-.media {
+header .media {
   opacity: 0;
   display: flex;
   width: 100%;
@@ -302,23 +312,12 @@ header.show-navbar .media {
   position: relative;
   margin: 5em 0;
 }
-.tab-content::before {
-  content: "";
-  width: 95%;
-  aspect-ratio: 1.55;
-  background-color: var(--clr-blue);
-  border-bottom-right-radius: 30%;
-  position: absolute;
-  z-index: 5;
-  top: 3.25em;
-  left: -2em;
-}
 .tab-content img {
   width: 100%;
   position: relative;
   z-index: 6;
 }
-.tab-content h2 {
+.tab-content h3 {
   margin: 4em 0 1em;
   text-align: center;
 }
@@ -345,11 +344,98 @@ header.show-navbar .media {
   bottom: -1.2em;
   left: 5%;
   background-color: var(--clr-red);
-  transform: scale(0);
+  transform: scaleX(0);
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
 .tab-name--active {
   color: black;
 }
 .tab-name--active::after {
-  transform: scale(1);
+  transform: scaleX(1);
+}
+
+#root h1, #root h2, #root h3 {
+  text-align: center;
+}
+#root p {
+  text-align: center;
+  line-height: 1.5em;
+}
+#root > div {
+  padding: 0 2em;
+  margin-top: 8em;
+}
+#root > div.get-started {
+  padding: 4em 2em;
+}
+
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+}
+.hero > div {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.hero > div button {
+  font-weight: 600;
+}
+
+.faqs {
+  text-align: center;
+}
+.faqs .dropdown-flex {
+  margin: 4em 0 3em;
+}
+.faqs button {
+  padding: 16px 22px;
+}
+
+.get-started {
+  background-color: var(--clr-blue);
+}
+.get-started > span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 0.8rem;
+}
+.get-started h2 {
+  color: white;
+  font-weight: 500;
+}
+.get-started form {
+  margin: 2em 0 0;
+}
+
+footer {
+  padding: 3em;
+  background-color: var(--clr-darkblue);
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  margin: 2.5em 0;
+  padding: 0;
+}
+footer li {
+  color: white;
+  margin: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+footer .media {
+  display: flex;
+  gap: 2.5em;
+  justify-content: center;
+  align-items: center;
 }

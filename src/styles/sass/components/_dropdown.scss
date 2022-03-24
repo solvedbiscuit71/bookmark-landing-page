@@ -18,12 +18,14 @@
     font-size: .95rem;
     font-weight: 400;
     margin: 1.5em 0 1em;
+    text-align: left;
   }
 
   p {
     display: none;
     margin: 2em 0;
     line-height: 1.625em;
+    text-align: left !important;
   }
 
   &--show {

@@ -23,17 +23,18 @@ header {
   .navbar {
     opacity: 0;
   }
+
+  .media {
+    opacity: 0;
+    display: flex;
+    width: 100%;
+
+    gap: 2.5em;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.media {
-  opacity: 0;
-  display: flex;
-  width: 100%;
-
-  gap: 2.5em;
-  justify-content: center;
-  align-items: center;
-}
 
 header.show-navbar {
   position: fixed;

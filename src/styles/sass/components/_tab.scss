@@ -22,26 +22,13 @@
   &-content {
     position: relative;
     margin: 5em 0;
-    &::before {
-      content: "";
-      width: 95%;
-      aspect-ratio: 1.55;
-
-      background-color: var(--clr-blue);
-      border-bottom-right-radius: 30%;
-      position: absolute;
-      z-index: 5;
-      top: 3.25em;
-      left: -2em;
-    }
-
     img {
       width: 100%;
       position: relative;
       z-index: 6;
     }
 
-    h2 {
+    h3 {
       margin: 4em 0 1em;
       text-align: center;
     }
@@ -74,13 +61,17 @@
     left: 5%;
 
     background-color: var(--clr-red);
-    transform: scale(0);
+    transform: scaleX(0);
+
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
   }
 
   &--active {
     color: black;
     &::after {
-      transform: scale(1);
+      transform: scaleX(1);
     }
   }
 }
