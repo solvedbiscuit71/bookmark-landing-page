@@ -6,6 +6,14 @@
   --clr-gray: hsl(229, 8%, 60%);
 }
 
+h1, h2, h3 {
+  color: black;
+}
+
+p {
+  color: var(--clr-gray);
+}
+
 :root {
   font-family: "Rubik";
   font-weight: 400;
@@ -24,7 +32,7 @@ h3 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 0.95rem;
 }
 
 *, *::before, *::after {
@@ -38,7 +46,6 @@ p {
 body {
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 .navbar ul {
@@ -78,6 +85,7 @@ header {
   min-height: 100vh;
   width: 100vw;
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   transition-property: background-color, opacity;
@@ -134,4 +142,77 @@ header.show-navbar .media {
   position: absolute;
   bottom: 3em;
   left: 0;
+}
+
+.tab-names {
+  margin: 0;
+  padding: 0;
+  border-top: 0.75px solid var(--clr-gray);
+  border-bottom: 0.75px solid var(--clr-gray);
+  list-style: none;
+  margin: 2.375em 0 1.625em;
+}
+.tab-names li {
+  min-height: 4em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.75px solid var(--clr-gray);
+  border-bottom: 0.75px solid var(--clr-gray);
+}
+.tab-content {
+  position: relative;
+  margin: 5em 0;
+}
+.tab-content::before {
+  content: "";
+  width: 95%;
+  aspect-ratio: 1.55;
+  background-color: var(--clr-blue);
+  border-bottom-right-radius: 30%;
+  position: absolute;
+  z-index: 5;
+  top: 3.25em;
+  left: -2em;
+}
+.tab-content img {
+  width: 100%;
+  position: relative;
+  z-index: 6;
+}
+.tab-content h2 {
+  margin: 4em 0 1em;
+  text-align: center;
+}
+.tab-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.5em;
+}
+.tab-content button {
+  display: none;
+}
+
+.tab-name {
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.tab-name::after {
+  content: "";
+  width: 90%;
+  height: 0.25em;
+  position: absolute;
+  bottom: -1.2em;
+  left: 5%;
+  background-color: var(--clr-red);
+  transform: scale(0);
+}
+.tab-name--active {
+  color: black;
+}
+.tab-name--active::after {
+  transform: scale(1);
 }

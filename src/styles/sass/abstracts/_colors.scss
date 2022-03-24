@@ -4,3 +4,6 @@
   --clr-darkblue: hsl(229, 31%, 21%);
   --clr-gray: hsl(229, 8%, 60%);
 }
+
+h1,h2,h3 { color: black; }
+p { color: var(--clr-gray);}

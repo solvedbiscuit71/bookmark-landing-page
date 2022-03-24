@@ -2,9 +2,9 @@ function Tab() {
   return (
     <div className="tab">
       <ul className="tab-names">
-        <li className="tab--active">Simple Booking</li>
-        <li>Speedy Searching</li>
-        <li>Easy Sharing</li>
+        <li><div className="tab-name tab-name--active">Simple Bookmarking</div></li>
+        <li><div className="tab-name">Speedy Searching</div></li>
+        <li><div className="tab-name">Easy Sharing</div></li>
       </ul>
 
       <div className="tab-content">
