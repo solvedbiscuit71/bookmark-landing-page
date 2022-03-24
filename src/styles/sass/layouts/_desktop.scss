@@ -96,7 +96,7 @@
     }
   }
 
-  :where(.features,.downloads,.faqs) > {
+  .features >,.downloads >,.faqs > {
     h2 {
       font-size: 2rem;
     }
@@ -157,13 +157,16 @@
     }
   }
 
-  .dropdown:hover {
-    cursor: pointer;
-
-    h4 {
-      color: var(--clr-red);
+  .dropdown {
+    h3 { font-size: 1.05rem;}
+    &:hover {
+      cursor: pointer;
+      h3 {
+        color: var(--clr-red);
+      }
     }
   }
+
 
   .faqs {
     button.btn.btn--primary {

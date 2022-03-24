@@ -123,7 +123,7 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
 }
-.dropdown h4 {
+.dropdown h3 {
   font-size: 0.95rem;
   font-weight: 400;
   margin: 1.5em 0 1em;
@@ -443,10 +443,10 @@ header.show-navbar .media {
     border-color: black;
   }
 
-  :where(.features,.downloads,.faqs) > h2 {
+  .features > h2, .downloads > h2, .faqs > h2 {
     font-size: 2rem;
   }
-  :where(.features,.downloads,.faqs) > p {
+  .features > p, .downloads > p, .faqs > p {
     font-size: 1.15rem;
     padding: 0 10%;
   }
@@ -495,10 +495,13 @@ header.show-navbar .media {
     border-color: var(--clr-blue);
   }
 
+  .dropdown h3 {
+    font-size: 1.05rem;
+  }
   .dropdown:hover {
     cursor: pointer;
   }
-  .dropdown:hover h4 {
+  .dropdown:hover h3 {
     color: var(--clr-red);
   }
 
