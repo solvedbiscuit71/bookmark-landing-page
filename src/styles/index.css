@@ -356,6 +356,213 @@ header.show-navbar .media {
   transform: scaleX(1);
 }
 
+@media only screen and (min-width: 1086px) {
+  #root > header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    min-height: auto;
+  }
+  #root > header .navbar-toggler {
+    display: none;
+  }
+  #root > header .logo__name {
+    fill: var(--clr-darkblue);
+  }
+  #root > header .logo__circle {
+    fill: var(--clr-blue);
+  }
+  #root > header .logo__icon {
+    fill: white;
+  }
+  #root > header .navbar {
+    display: flex;
+    gap: 2.5em;
+    align-items: center;
+    opacity: 1;
+  }
+  #root > header .navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    border: none;
+    margin: 0;
+  }
+  #root > header .navbar li {
+    font-size: 0.9rem;
+    border: none;
+    color: black;
+    width: fit-content;
+  }
+  #root > header .navbar li:hover {
+    cursor: pointer;
+    color: var(--clr-red);
+  }
+  #root > header .navbar button.btn {
+    color: white;
+    background-color: var(--clr-red);
+    width: fit-content;
+    font-size: 0.9rem;
+    padding: 0 2.5em;
+  }
+  #root > header .navbar button.btn:hover {
+    cursor: pointer;
+    color: var(--clr-red);
+    background-color: transparent;
+    border-color: var(--clr-red);
+  }
+  #root > header .media {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 15em;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.15rem;
+    padding-right: 1em;
+  }
+  .hero .btn--primary {
+    border: 1.5px solid transparent;
+  }
+  .hero .btn--primary:hover {
+    color: var(--clr-blue);
+    cursor: pointer;
+    background-color: transparent;
+    border-color: var(--clr-blue);
+  }
+  .hero .btn--shadow {
+    border: 1.5px solid transparent;
+  }
+  .hero .btn--shadow:hover {
+    cursor: pointer;
+    color: black;
+    border-color: black;
+  }
+
+  :where(.features,.downloads,.faqs) > h2 {
+    font-size: 2rem;
+  }
+  :where(.features,.downloads,.faqs) > p {
+    font-size: 1.15rem;
+    padding: 0 10%;
+  }
+
+  .tab li {
+    font-size: 1.15rem;
+  }
+  .tab .tab-name:hover {
+    cursor: pointer;
+    color: var(--clr-red);
+  }
+  .tab .tab-content > div {
+    margin-left: 4em;
+  }
+  .tab .tab-content > div h3 {
+    font-size: 2rem;
+    margin: 0.5em 0;
+  }
+  .tab .tab-content > div p {
+    font-size: 1.15rem;
+    padding-right: 18%;
+  }
+  .tab .tab-content > div .btn.btn--primary {
+    display: inline;
+    margin-top: 2em;
+    font-size: 1rem;
+    padding: 0.8em 1.5em;
+  }
+
+  .card-flex {
+    min-height: 444px;
+  }
+  .card-flex .card:first-child {
+    align-self: flex-start;
+  }
+  .card-flex .card:last-child {
+    align-self: flex-end;
+  }
+  .card-flex .card button {
+    border: 1.5px solid transparent;
+  }
+  .card-flex .card button:hover {
+    cursor: pointer;
+    color: var(--clr-blue);
+    background-color: transparent;
+    border-color: var(--clr-blue);
+  }
+
+  .dropdown:hover {
+    cursor: pointer;
+  }
+  .dropdown:hover h4 {
+    color: var(--clr-red);
+  }
+
+  .faqs button.btn.btn--primary {
+    font-size: 1rem;
+    padding: 0.8em 1.5em;
+  }
+
+  div.get-started h2 {
+    font-size: 2rem;
+    padding: 0 30%;
+  }
+  div.get-started form {
+    max-width: 444px;
+    flex-direction: row;
+  }
+  div.get-started form .input {
+    flex: 1;
+  }
+  div.get-started form button.btn.btn--secondary {
+    font-size: 1rem;
+    padding: 0.8em 1.5em;
+    border: 1.5px solid transparent;
+    align-self: flex-start;
+  }
+  div.get-started form button.btn.btn--secondary:hover {
+    cursor: pointer;
+    color: var(--clr-red);
+    background-color: white;
+    border-color: var(--clr-red);
+  }
+
+  main > footer {
+    padding: 0.5em 10vw;
+    display: flex;
+    gap: 4em;
+    align-items: center;
+    position: relative;
+  }
+  main > footer ul {
+    display: flex;
+    gap: 2em;
+  }
+  main > footer ul li {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  main > footer ul li:hover {
+    cursor: pointer;
+    color: var(--clr-red);
+  }
+  main > footer .media {
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    transform: translateY(-50%);
+  }
+  main > footer .media svg:hover {
+    cursor: pointer;
+  }
+  main > footer .media svg:hover path {
+    fill: var(--clr-red);
+  }
+}
 main h1, main h2, main h3 {
   text-align: center;
 }

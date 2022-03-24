@@ -1,0 +1,243 @@
+@media only screen and (min-width: 1086px) {
+  #root > header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    min-height: auto;
+
+    .navbar-toggler {
+      display: none;
+    }
+
+    .logo {
+      &__name { fill: var(--clr-darkblue); }
+      &__circle { fill: var(--clr-blue);}
+      &__icon { fill: white;}
+    }
+
+    .navbar {
+      display: flex;
+      gap: 2.5em;
+      align-items: center;
+      opacity: 1;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5em;
+        border: none;
+        margin: 0;
+      }
+
+      li {
+        font-size: .9rem;
+        border: none;
+        color: black;
+        width: fit-content;
+      }
+
+      li:hover {
+        cursor: pointer;
+        color: var(--clr-red);
+      }
+
+      button.btn {
+        color: white;
+        background-color: var(--clr-red);
+        width: fit-content;
+
+        font-size: .9rem;
+        padding: 0 2.5em;
+      }
+
+      button.btn:hover {
+        cursor: pointer;
+        color: var(--clr-red);
+        background-color: transparent;
+        border-color: var(--clr-red);
+      }
+    }
+
+    .media {
+      display: none;
+    }
+  }
+
+  .hero {
+    margin-top: 15em;
+
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.15rem;
+      padding-right: 1em;
+    }
+
+    .btn--primary {
+      border: 1.5px solid transparent;
+    }
+
+    .btn--primary:hover {
+      color: var(--clr-blue);
+      cursor: pointer;
+      background-color: transparent;
+      border-color: var(--clr-blue);
+    }
+    
+    .btn--shadow {
+      border: 1.5px solid transparent;
+    }
+
+    .btn--shadow:hover {
+      cursor: pointer;
+      color: black;
+      border-color: black;
+    }
+  }
+
+  :where(.features,.downloads,.faqs) > {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      padding: 0 10%;
+    }
+  }
+
+  .tab {
+    li {
+      font-size: 1.15rem;
+    }
+
+    .tab-name:hover {
+      cursor: pointer;
+      color: var(--clr-red);
+    }
+
+    .tab-content > div {
+      margin-left: 4em;
+
+      h3 {
+        font-size: 2rem;
+        margin: .5em 0;
+      }
+
+      p {
+        font-size: 1.15rem;
+        padding-right: 18%;
+      }
+
+      .btn.btn--primary { 
+        display: inline; 
+        margin-top: 2em;
+        font-size: 1rem;
+        padding: .8em 1.5em;
+      }
+    }
+  }
+
+  .card-flex {
+    min-height: 444px;
+
+    .card:first-child { align-self: flex-start;}
+    .card:last-child { align-self: flex-end;}
+
+    .card button {
+      border: 1.5px solid transparent;
+    }
+
+    .card button:hover {
+      cursor: pointer;
+      color: var(--clr-blue);
+      background-color: transparent;
+      border-color: var(--clr-blue);
+    }
+  }
+
+  .dropdown:hover {
+    cursor: pointer;
+
+    h4 {
+      color: var(--clr-red);
+    }
+  }
+
+  .faqs {
+    button.btn.btn--primary {
+      font-size: 1rem;
+      padding: .8em 1.5em;
+    }
+  }
+
+  div.get-started {
+
+    h2 {
+      font-size: 2rem;
+      padding: 0 30%;
+    }
+
+    form {
+      max-width: 444px;
+      flex-direction: row;
+
+      .input {
+        flex: 1;
+      }
+
+      button.btn.btn--secondary {
+        font-size: 1rem;
+        padding: .8em 1.5em;
+
+        border: 1.5px solid transparent;
+        align-self: flex-start;
+      }
+
+      button.btn.btn--secondary:hover {
+        cursor: pointer;
+        color: var(--clr-red);
+        background-color: white;
+        border-color: var(--clr-red);
+      }
+    }
+  }
+
+  main > footer {
+    padding: .5em 10vw;
+
+    display: flex;
+    gap: 4em;
+    align-items: center;
+
+    ul {
+      display: flex;
+      gap: 2em;
+
+      li {
+        margin: 0;
+        font-size: .9rem;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--clr-red);
+        }
+      }
+    }
+
+    position: relative;
+
+    .media {
+      position: absolute;
+      top: 50%;
+      right: 10vw;
+      transform: translateY(-50%);
+
+      svg:hover {
+        cursor: pointer;
+        path { fill: var(--clr-red);}
+      }
+    }
+  }
+}
