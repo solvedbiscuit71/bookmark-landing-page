@@ -2,9 +2,9 @@ import Card from "./card";
 
 function CardFlex() {
   const data = [
-    {name: "Chrome",version:62},
-    {name: "Firefox",version:55},
-    {name: "Opera",version:46},
+    {name: "chrome",version:62},
+    {name: "firefox",version:55},
+    {name: "opera",version:46},
   ]
 
   return (
