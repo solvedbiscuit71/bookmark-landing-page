@@ -1,17 +1,4 @@
-// &::before {
-//   content: "";
-//   width: 95%;
-//   aspect-ratio: 1.55;
-
-//   background-color: var(--clr-blue);
-//   border-bottom-right-radius: 30%;
-//   position: absolute;
-//   z-index: 5;
-//   top: 3.25em;
-//   left: -2em;
-// }
-
-#root {
+main {
   h1,h2,h3 {
     text-align: center;
   }
@@ -37,7 +24,7 @@
     width: 100%;
   }
 
-  > div {
+  &__btns {
     display: flex;
     gap: 1em;
     justify-content: center;

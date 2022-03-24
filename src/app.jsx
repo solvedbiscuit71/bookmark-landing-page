@@ -12,15 +12,17 @@ function App() {
       <div className="hero">
         <img src="images/illustration-hero.svg" alt="illustration image for hero section" />
 
-        <h1>A Simple Bookmark Manager</h1>
-        <p>
-          A clean and simple interface to organize your favourite websites. Open a new 
-          browser tab and see your sites load instantly. Try it for free.
-        </p>
+        <div className="hero__content">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
 
-        <div>
-          <button className="btn btn--primary">Get it on Chrome</button>
-          <button className="btn btn--shadow">Get it on Firefox</button>
+          <div className="hero__btns">
+            <button className="btn btn--primary">Get it on Chrome</button>
+            <button className="btn btn--shadow">Get it on Firefox</button>
+          </div>
         </div>
       </div>
 

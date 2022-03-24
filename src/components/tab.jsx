@@ -38,9 +38,11 @@ function Tab() {
       <div className="tab-content">
         <img src={`images/illustration-features-tab-${cur + 1}.svg`}alt="illustration image for features tab" />
 
-        <h3>{data[cur].title}</h3>
-        <p>{data[cur].para}</p>
-        <button className="btn btn--primary">More Info</button>
+        <div>
+          <h3>{data[cur].title}</h3>
+          <p>{data[cur].para}</p>
+          <button className="btn btn--primary">More Info</button>
+        </div>
       </div>
     </div>
   );
